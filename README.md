@@ -20,16 +20,16 @@ pip install google-cloud-storage
 Anaconda  
 OR  
 pip install PyQt5  
-pip install numpy
+pip install numpy  
 pip install scipy  
 pip install matplotlib  
-Probably some others I'm forgetting about  
+Probably some others I'm forgetting about
 
 ## How to freeze
-pip install pyinstaller  
+pip install pyinstaller
 
 The following command line code works for me but could vary by user.  
-pyinstaller --noconsole --hidden-import scipy._lib.messagestream --paths "C:\ProgramData\Anaconda3\Lib\site-packages\scipy\extra-dll" --additional-hooks-dir=hooks main.py  
+pyinstaller --noconsole --hidden-import scipy._lib.messagestream --paths "C:\ProgramData\Anaconda3\Lib\site-packages\scipy\extra-dll" --additional-hooks-dir=hooks main.py
 
 This should be called after navigating to the source folder.  
 "C:\ProgramData\Anaconda3\Lib\site-packages\scipy\extra-dll" should be the extra-dll folder under the scipy installation.  
